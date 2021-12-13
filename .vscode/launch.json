@@ -17,7 +17,11 @@
             "name": "iqbalmineraltown_github_io (profile mode)",
             "request": "launch",
             "type": "dart",
-            "flutterMode": "profile"
+            "flutterMode": "profile",
+            "args": [
+                "-d",
+                "chrome"
+            ]
         }
     ]
 }
