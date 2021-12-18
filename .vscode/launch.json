@@ -10,7 +10,9 @@
             "type": "dart",
             "args": [
                 "-d",
-                "chrome"
+                "chrome",
+                "--web-renderer",
+                "html"
             ]
         },
         {

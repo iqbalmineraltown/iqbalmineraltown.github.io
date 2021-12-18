@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:iqbalmineraltown_github_io/src/home.dart';
+
+import 'package:iqbalmineraltown_github_io/src/sections/sections.dart';
 
 void main() {
   runApp(const MyPortfolioApp());
@@ -32,12 +33,12 @@ class _PortfolioPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ListView(
-      children: [
-        Home(), // short introduction, photo?
-        Home(), // longer text, about & background
-        Home(), // skills & specialties
-        Home(), // portfolios
-        Home(), // email contacts, network links
+      children: const [
+        HomeSection(), // short introduction, photo?
+        AboutSection(), // longer text, about & background
+        HomeSection(), // skills & specialties
+        HomeSection(), // portfolios
+        HomeSection(), // email contacts, network links
       ],
     );
   }

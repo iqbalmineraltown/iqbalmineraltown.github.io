@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class Home extends StatelessWidget {
-  const Home({Key? key}) : super(key: key);
+class HomeSection extends StatelessWidget {
+  const HomeSection({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -10,13 +10,11 @@ class Home extends StatelessWidget {
     return Container(
       height: height,
       width: width,
-      child: Container(
-        color: Colors.amber,
-        child: Center(
-          child: Text(
-            'John Thor',
-            style: Theme.of(context).textTheme.headline1,
-          ),
+      color: Colors.amber,
+      child: Center(
+        child: Text(
+          'John Thor',
+          style: Theme.of(context).textTheme.headline1,
         ),
       ),
     );
