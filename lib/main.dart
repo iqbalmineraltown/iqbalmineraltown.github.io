@@ -36,7 +36,7 @@ class _PortfolioPage extends StatelessWidget {
       children: const [
         HomeSection(), // short introduction, photo?
         AboutSection(), // longer text, about & background
-        HomeSection(), // skills & specialties
+        SkillsSection(), // skills & specialties
         HomeSection(), // portfolios
         HomeSection(), // email contacts, network links
       ],
