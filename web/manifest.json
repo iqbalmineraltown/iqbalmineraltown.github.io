@@ -1,11 +1,11 @@
 {
-    "name": "iqbalmineraltown_github_io",
-    "short_name": "iqbalmineraltown_github_io",
+    "name": "iqbalmineraltown",
+    "short_name": "iqbalmineraltown",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",
     "theme_color": "#0175C2",
-    "description": "A new Flutter project.",
+    "description": "Personal web of iqbalmineraltown",
     "orientation": "portrait-primary",
     "prefer_related_applications": false,
     "icons": [

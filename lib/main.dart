@@ -37,8 +37,8 @@ class _PortfolioPage extends StatelessWidget {
         HomeSection(), // short introduction, photo?
         AboutSection(), // longer text, about & background
         SkillsSection(), // skills & specialties
-        HomeSection(), // portfolios
-        HomeSection(), // email contacts, network links
+        PortfolioSection(), // portfolios
+        ContactSection(), // email contacts, network links
       ],
     );
   }

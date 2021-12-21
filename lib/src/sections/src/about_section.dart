@@ -18,7 +18,7 @@ class AboutSection extends StatelessWidget {
             child: AspectRatio(
               aspectRatio: 3.0 / 4.0,
               child: Image.network(
-                  'https://portfolio.iqbalmineraltown.com/assets/img/about/about1.jpg'),
+                  'https://w7.pngwing.com/pngs/344/463/png-transparent-rage-comic-comics-internet-meme-drawing-rage-white-face-comic-book-thumbnail.png'),
             ),
           ),
           Expanded(
