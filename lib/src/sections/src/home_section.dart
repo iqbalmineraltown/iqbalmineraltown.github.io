@@ -8,14 +8,26 @@ class HomeSection extends StatelessWidget {
     var height = MediaQuery.of(context).size.height;
     var width = MediaQuery.of(context).size.width;
     return Container(
+      color: Theme.of(context).colorScheme.background,
       height: height,
       width: width,
-      color: Colors.amber,
-      child: Center(
-        child: Text(
-          'John Thor',
-          style: Theme.of(context).textTheme.headline1,
-        ),
+      child: Stack(
+        children: [
+          Center(
+            child: Text(
+              'John Thor',
+              style: Theme.of(context).textTheme.headline1?.copyWith(
+                    color: Theme.of(context).colorScheme.primary,
+                  ),
+            ),
+          ),
+          Center(
+            child: Text(
+              'John Thor',
+              style: Theme.of(context).textTheme.headline3,
+            ),
+          ),
+        ],
       ),
     );
   }

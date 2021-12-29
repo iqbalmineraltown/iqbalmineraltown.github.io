@@ -22,7 +22,7 @@ class ContactSection extends StatelessWidget {
             ),
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
-              children: [_ContactItem()],
+              children: const [_ContactItem()],
             ),
           ],
         ),

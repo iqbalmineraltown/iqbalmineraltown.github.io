@@ -4,23 +4,31 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:iqbalmineraltown_github_io/src/sections/sections.dart';
 
 void main() {
-  runApp(const MyPortfolioApp());
+  runApp(MyPortfolioApp());
 }
 
 class MyPortfolioApp extends StatelessWidget {
-  const MyPortfolioApp({Key? key}) : super(key: key);
+  MyPortfolioApp({Key? key}) : super(key: key);
+
+  final ThemeData _theme = ThemeData();
 
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Portfolio',
       debugShowCheckedModeBanner: false,
-      themeMode: ThemeMode.dark,
-      darkTheme: Theme.of(context).copyWith(
-        textTheme: GoogleFonts.montserratTextTheme(),
-      ),
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
+      theme: _theme.copyWith(
+        scaffoldBackgroundColor: const Color(0xFF1B262C),
+        backgroundColor: const Color(0xFF1B262C),
+        colorScheme: _theme.colorScheme.copyWith(
+          background: const Color(0xFF1B262C),
+          primary: const Color(0xFF0F4C75),
+          secondary: const Color(0xFF3282B8),
+        ),
+        textTheme: GoogleFonts.montserratTextTheme().apply(
+          displayColor: const Color(0xFFBBE1FA),
+          bodyColor: const Color(0xFFBBE1FA),
+        ),
       ),
       home: const _PortfolioPage(),
     );
